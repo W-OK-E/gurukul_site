@@ -1,17 +1,18 @@
 import Hero from "@/components/Hero";
+import StatsCounter from "@/components/StatsCounter";
+import CoursesSection from "@/components/CoursesSection";
+import Testimonials from "@/components/Testimonials";
+import CallToAction from "@/components/CallToAction";
+import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="p-6">
-      <h1 className="text-4xl font-bold mb-4">Welcome to Gurukul</h1>
-
-      <main>
-        <Hero />
-      </main>
-      {/* Temporary filler */}
-      <div style={{ height: "150vh", background: "#E1E9C9" }}></div>
-
-      <p className="mt-4">End of content!</p>
-    </div>
+    <main>
+      <Hero />
+      <StatsCounter />
+      <CoursesSection />
+      <Testimonials />
+      <CallToAction />
+    </main>
   );
 }
