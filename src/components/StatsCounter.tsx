@@ -26,7 +26,7 @@ function Counter({ target, label }: { target: number; label: string }) {
 
 export default function StatsCounter() {
   return (
-    <section className="bg-[#E1E9C9] py-16">
+    <section className="max-w-7xl mx-auto px-6 py-16">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <Counter target={1200} label="Active Students" />
         <Counter target={85} label="Expert Tutors" />

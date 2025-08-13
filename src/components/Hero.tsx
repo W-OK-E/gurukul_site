@@ -1,35 +1,48 @@
-"use client";
-import Image from "next/image";
+import CoursesMarquee from "./CoursesMarquee";
+import Link from "next/link";
+import StepsBar from "./StepsBar";
 
 export default function Hero() {
   return (
-    <section className="bg-[#CADCAE] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-8 py-20">
-        {/* Left */}
-        <div className="max-w-lg">
-          <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-            World-Class Tutors <br /> At Your Fingertips
-          </h1>
-          <p className="mt-4 text-lg text-gray-700">
-            Learn from the best educators across the globe with personalized
-            learning experiences.
-          </p>
-          <button className="mt-6 bg-[#EDA35A] text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-500">
-            Get Started
-          </button>
+    <section className="relative items-center justify-center text-center max-w-7xl mx-auto px-6 py-16 min-h-screen">
+      {/* Background Video - Fixed to viewport */}
+      <video
+        className="fixed top-0 left-0 w-full h-full object-cover blur-md brightness-75 -z-10"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/bg-video.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay for extra contrast - Fixed to viewport */}
+      <div className="fixed inset-0 bg-black/30 -z-10"></div>
+
+      {/* Foreground Content */}
+      <div className="relative z-10 flex flex-col items-center px-6 pt-24">
+        
+        {/* Main Heading */}
+        <h1 className="text-5xl font-bold text-white max-w-3xl mb-6 drop-shadow-lg">
+          The only tutoring solution you need
+        </h1>
+
+        {/* Schedule Demo Button */}
+        <Link
+          href="#demo"
+          className="px-6 py-3 text-lg bg-[#2C497F] text-white rounded-lg shadow-lg transform transition hover:scale-105 hover:bg-[#3D2B56] mb-8"
+        >
+          Book a Free Demo
+        </Link>
+
+        {/* Courses Marquee */}
+        <div className="w-full">
+          <CoursesMarquee />
         </div>
 
-        {/* Right */}
-        <div className="relative mt-10 md:mt-0">
-          <div className="absolute -top-10 -left-10 w-80 h-80 bg-[#E1E9C9] rounded-full -z-10"></div>
-          <Image
-            src="/tutor.png"
-            alt="Tutor"
-            width={400}
-            height={400}
-            className="rounded-lg"
-          />
-        </div>
+        {/* Steps Bar */}
+        <StepsBar />
       </div>
     </section>
   );

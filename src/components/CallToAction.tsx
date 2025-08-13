@@ -1,6 +1,6 @@
 export default function CallToAction() {
   return (
-    <section className="bg-[#EDA35A] py-16 text-center text-white">
+    <section className="max-w-7xl mx-auto px-6 py-16">
       <h2 className="text-3xl font-bold mb-4">
         Start Your Learning Journey Today!
       </h2>
