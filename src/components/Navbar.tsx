@@ -16,18 +16,20 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? "bg-[#CCF5AC] shadow-md" : "bg-transparent"
+        scrolled ? "bg-[#CCF5AC] shadow-md" : "bg-[#ccf5ac]/70 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <img src="/gurukul-logo.png" alt="Gurukul Logo" className="w-8 h-8 rounded-full" />
-          <span className="font-bold text-[#3D2B56] text-lg">Gurukul</span>
+          <span className={`${scrolled ? "text-[#3D2B56]" : "text-white"} font-bold text-lg`}>
+            Gurukul
+          </span>
         </Link>
 
         {/* Nav Links */}
-        <div className="hidden md:flex space-x-6 text-[#3D2B56]">
+        <div className={`hidden md:flex space-x-6 ${scrolled ? "text-[#3D2B56]" : "text-white"}`}>
           <Link href="#courses" className="hover:text-[#2C497F]">Courses</Link>
           <Link href="#about" className="hover:text-[#2C497F]">About</Link>
           <Link href="#contact" className="hover:text-[#2C497F]">Contact</Link>

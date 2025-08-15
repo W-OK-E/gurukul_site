@@ -1,17 +1,20 @@
 import Hero from "@/components/Hero";
-import StatsCounter from "@/components/StatsCounter";
-import CoursesSection from "@/components/CoursesSection";
+import CoursesMarquee from "@/components/CoursesMarquee";
+import WhoWeAre from "@/components/WhoWeAre";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import CoursesFilter from "@/components/CoursesFilter";
+import FeaturedCourses from "@/components/FeaturedCourses";
 import Testimonials from "@/components/Testimonials";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
-import CoursesMarquee from "@/components/CoursesMarquee";
 
 export default function Page() {
   return (
     <main>
       <Hero />
-      <StatsCounter />
-      <CoursesSection />
+      <WhoWeAre />
+      <WhyChooseUs />
+      <CoursesFilter />
       <Testimonials />
       <CallToAction />
     </main>
