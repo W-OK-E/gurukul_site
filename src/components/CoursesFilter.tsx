@@ -8,7 +8,7 @@ const courses = [
     title: "K–12 Learning",
     description: "School curriculum from KG to 12th grade.",
     href: "/k-12",
-    image: "/icons/books.png",
+    image: "/icons/k12.png",
     bgColor: "bg-[#ccf5ac]",
   },
   {
@@ -22,7 +22,7 @@ const courses = [
     title: "Robotics",
     description: "For the young and old tinkerers alike.",
     href: "/robitcs",
-    image: "/icons/ml.png",
+    image: "/icons/robotics.png",
     bgColor: "bg-[#ccf5ac]",
   },
   {

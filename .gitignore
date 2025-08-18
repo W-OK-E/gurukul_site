@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+#Auth details for the services we are using
+creds.md
+/src/generated/prisma

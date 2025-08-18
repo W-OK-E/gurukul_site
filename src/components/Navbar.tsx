@@ -36,11 +36,11 @@ export default function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <Link
-          href="#demo"
-          className="px-4 py-2 bg-[#2C497F] text-white rounded-lg hover:bg-[#3D2B56] transition"
-        >
-          Join Now
+
+        <Link href="/login">
+          <button className="bg-[#2C497F] text-white px-4 py-2 rounded">
+            Login
+          </button>
         </Link>
       </div>
     </nav>
