@@ -30,7 +30,7 @@ export default function Hero() {
 
         {/* Schedule Demo Button */}
         <Link
-          href="#demo"
+          href="/booking"
           className="px-6 py-3 text-lg bg-[#2C497F] text-white rounded-lg shadow-lg transform transition hover:scale-105 hover:bg-[#3D2B56] mb-8"
         >
           Book a Free Demo
@@ -42,7 +42,7 @@ export default function Hero() {
         </div>
 
         {/* Steps Bar */}
-        <StepsBar />
+        <StepsBar/>
       </div>
     </section>
   );

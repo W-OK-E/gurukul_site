@@ -14,6 +14,7 @@ export default async function StudentDashboard() {
     .single();
 
   if (profile?.role !== "instructor") {
+    console.log("Redirecting to Student in Instructor page.tsx");
     redirect("/dashboard/student");
   }
 

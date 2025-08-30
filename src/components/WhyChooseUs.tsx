@@ -1,16 +1,9 @@
 "use client";
-import { FaUserGraduate, FaBookOpen, FaGlobe, FaChalkboardTeacher } from "react-icons/fa";
-
-const points = [
-  { icon: <FaUserGraduate size={40} />, title: "Personalized Tutoring", desc: "Tailored lessons to match each student's pace and style." },
-  { icon: <FaBookOpen size={40} />, title: "Comprehensive Curriculum", desc: "Covering all grades, subjects, and competitive exams." },
-  { icon: <FaGlobe size={40} />, title: "Global Expert Tutors", desc: "Learn from the best teachers across the globe." },
-  { icon: <FaChalkboardTeacher size={40} />, title: "Interactive Learning", desc: "Engaging online classes with advanced tech tools." },
-];
+import {points} from "@/data/points";
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 bg-[#ccf5ac]">
+    <section className="relative py-24 max-w-6xl mx-auto text-center">
       <h2 className="text-3xl font-bold text-center mb-12">Why Choose Gurukul?</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
         {points.map((point, i) => (
@@ -24,3 +17,4 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+

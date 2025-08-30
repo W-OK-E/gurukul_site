@@ -3,3 +3,4 @@
 2.You need to explicitly load them with dotenv. This needed to be done for the .env.local file which contained the supabase dashboard creds
 
 So npm install dotenv was required.
+

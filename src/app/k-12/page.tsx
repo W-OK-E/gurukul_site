@@ -53,7 +53,7 @@ export default function K12Page() {
           Welcome to the all-in-one solution for your child's tutoring needs.
         </p>
         <Link
-          href="#book-demo"
+          href="/booking"
           className="px-6 py-3 bg-[#2c497f] text-white rounded-lg shadow-lg hover:bg-[#3d2b56] transition"
         >
           Book a Free Demo
@@ -79,7 +79,7 @@ export default function K12Page() {
       {/* Midway Book Demo Button */}
       <section className="text-center my-12">
         <Link
-          href="#book-demo"
+          href="/booking"
           className="px-6 py-3 bg-[#eda35a] text-white rounded-lg shadow-lg hover:bg-[#3d2b56] transition"
         >
           Book Your Spot Now

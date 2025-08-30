@@ -15,7 +15,7 @@ export default function KindergartenPage() {
             Set the foundation for lifelong learning with playful and interactive lessons in Math, Language, and Creativity.
           </p>
           <Link
-            href="#book-demo"
+            href="/booking"
             className="px-6 py-3 bg-[#2c497f] text-white rounded-lg shadow-lg hover:bg-[#3d2b56] transition"
           >
             Book a Free Demo
@@ -124,7 +124,7 @@ export default function KindergartenPage() {
           Ready to Begin Your Child's Learning Journey?
         </h2>
         <Link
-          href="#book-demo"
+          href="/booking"
           className="px-6 py-3 bg-[#2c497f] text-white rounded-lg shadow-lg hover:bg-[#3d2b56] transition"
         >
           Book a Free Demo Now

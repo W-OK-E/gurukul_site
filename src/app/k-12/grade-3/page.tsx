@@ -49,7 +49,8 @@ export default function Grade3Page() {
 
       {/* Final CTA */}
       <section className="text-center mt-12">
-        <button className="px-6 py-3 bg-[#2C497F] text-white rounded-lg hover:bg-[#3D2B56]">
+        <button className="px-6 py-3 bg-[#2C497F] text-white rounded-lg hover:bg-[#3D2B56]"
+           onClick={() => window.location.href = '/booking'}>
           Book a Free Demo
         </button>
       </section>

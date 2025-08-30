@@ -1,36 +1,26 @@
-// src/app/dashboard/layout.tsx
-import { prisma } from "@/lib/prisma";
-import { supabaseServer } from "@/lib/supabaseServer";
-import { redirect } from "next/navigation";
+import '../globals.css';
+import Navbar from '@/components/Navbar';
+import type { Metadata } from 'next';
+import Link  from 'next/link';
+export const metadata: Metadata = {
+  title: 'Gurukul',
+  description: 'Personalized tutoring platform',
+};
 
-
-
-export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const supabase = supabaseServer();
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-
-  if (!session) redirect("/login");
-
-  const user = await prisma.user.findUnique({
-    where: { externalId: session.user.id },
-    include: {
-      parentKids: true,
-      studentKid: true,
-      instructor: true,
-    },
-  });
-
-  if (!user) redirect("/onboarding");
-
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className="p-6">
-      <header className="mb-6 border-b pb-4 flex justify-between">
-        <h1 className="text-xl font-bold">Dashboard</h1>
-        <span className="text-sm text-gray-600">{user.name} ({user.role})</span>
-      </header>
-      {children}
-    </div>
+    <html lang="en">
+      <body
+        className="flex flex-col min-h-screen"
+        style={{ backgroundColor: '#f7f7f7ff', color: '#2c2c2c' }} // Light green background with dark text
+      >
+        {/* <Navbar /> */}
+        <main className="flex-grow px-4 py-6">{children}</main>
+      </body>
+    </html>
   );
 }
