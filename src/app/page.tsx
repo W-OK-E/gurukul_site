@@ -1,12 +1,9 @@
 import Hero from "@/components/Hero";
-import CoursesMarquee from "@/components/CoursesMarquee";
 import WhoWeAre from "@/components/WhoWeAre";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import CoursesFilter from "@/components/CoursesFilter";
-import FeaturedCourses from "@/components/FeaturedCourses";
 import Testimonials from "@/components/Testimonials";
-import CallToAction from "@/components/CallToAction";
-import Footer from "@/components/Footer";
+import ProcessFlow from "@/components/processFlowComp";
 
 export default function Page() {
   return (
@@ -51,8 +48,8 @@ export default function Page() {
         <WhoWeAre />
         <WhyChooseUs />
         <CoursesFilter />
+        <ProcessFlow />
         <Testimonials />
-        <CallToAction />
       </div>
     </main>
   );
