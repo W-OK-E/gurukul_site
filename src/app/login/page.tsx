@@ -6,7 +6,7 @@ import { loginAction } from '@/app/actions/auth'
 export default async function LoginPage({
   searchParams,
 }: {
-  searchParams: { message?: string; error?: string }
+  searchParams: { message: string; error: string }
 }) {
   console.log("Awaiting Current User");
   const user = await getCurrentUser()
